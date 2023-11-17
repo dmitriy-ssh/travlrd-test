@@ -54,7 +54,7 @@ export function Dropdown<T extends DropdownItem>({
           {options.map((option) => (
             <li
               key={option.value}
-              className="border-2 h-[44px] border-black rounded p-2 flex flex-row justify-start items-center gap-2"
+              className="border-2 h-[44px] border-black rounded p-2 flex flex-row justify-start items-center gap-2 bg-gray-100"
               onClick={() => {
                 onItemSelect(option);
                 toogleOverlay();
@@ -87,7 +87,7 @@ export function Dropdown<T extends DropdownItem>({
   const headerJsx = useMemo(
     () => (
       <div
-        className="border-2 h-[44px] border-black rounded p-2 flex flex-row justify-start items-center gap-2"
+        className="border-2 h-[44px] border-black rounded p-2 flex flex-row justify-start items-center gap-2 bg-gray-100"
         onClick={toogleOverlay}
       >
         {!isItemSelected && (
